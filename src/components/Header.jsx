@@ -27,7 +27,7 @@ export default function Header({ cartCount, onCartClick }) {
           </button>
           
           <Link to="/" className="flex items-center">
-            <h1 className="font-display-xl text-headline-lg-mobile md:text-headline-lg italic uppercase tracking-tighter text-primary select-none">
+            <h1 className="font-display-xl text-[16px] min-[360px]:text-[18px] min-[390px]:text-[22px] sm:text-headline-lg-mobile md:text-headline-lg italic uppercase tracking-tighter min-[390px]:tracking-normal md:tracking-wider text-primary select-none whitespace-nowrap">
               CRAZY PIZZA PRIME
             </h1>
           </Link>
