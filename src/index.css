@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    min-height: max(884px, 100vh);
+    background-color: #f9f9f9;
+    color: #1a1c1c;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Material Symbols Outlined settings */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Brutalist drop shadows and border utilities */
+.brutalist-shadow {
+  box-shadow: 4px 4px 0px 0px rgba(26, 28, 28, 1);
+}
+
+.brutalist-shadow-lg {
+  box-shadow: 8px 8px 0px 0px rgba(26, 28, 28, 1);
+}
+
+.brutalist-shadow-sm {
+  box-shadow: 3px 3px 0px 0px rgba(26, 28, 28, 1);
+}
+
+.active-press:active {
+  transform: scale(0.95);
+}
+
+.hover-pop:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px 0px rgba(26, 28, 28, 1);
+}
+
+.crust-divider {
+  height: 8px;
+  background-image: radial-gradient(circle, #b90027 2px, transparent 2.5px);
+  background-size: 10px 10px;
+}
+
+.brutalist-card {
+  border: 3px solid #1a1c1c;
+  box-shadow: 6px 6px 0px 0px rgba(26, 28, 28, 1);
+  transition: all 0.2s ease;
+}
+
+.brutalist-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0px 0px rgba(26, 28, 28, 1);
+}
+
+.brutalist-button {
+  border: 2px solid #1a1c1c;
+  box-shadow: 4px 4px 0px 0px rgba(26, 28, 28, 1);
+  transition: all 0.1s ease;
+}
+
+.brutalist-button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0px 0px 0px 0px rgba(26, 28, 28, 1);
+}
+
+.brutalist-active:active {
+  transform: translate(3px, 3px);
+  box-shadow: 0px 0px 0px 0px rgba(26, 28, 28, 1);
+}
+
+.bg-pattern {
+  background-color: #f9f9f9;
+  background-image: radial-gradient(#e2e2e2 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.jagged-divider {
+  height: 8px;
+  background-image: radial-gradient(circle at 10px 10px, transparent 12px, #1a1c1c 13px);
+  background-size: 20px 20px;
+}
+
+.price-badge {
+  box-shadow: 2px 2px 0px 0px rgba(26, 28, 28, 1);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Custom scrollbars */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #eeeeee;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #b90027;
+  border-radius: 4px;
+}
+
+/* Hide safe area padding for desktop */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom);
+}
